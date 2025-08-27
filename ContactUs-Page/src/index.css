@@ -1,68 +1,162 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    font-family: "Poppins", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+*{
+    margin: 0;
 }
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8px;
+    height: 72px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    font-weight: 500;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.Contact{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+.Contact h1{
+    font-weight: 800;
+    font-size: 46px;
+}
+
+.Contact p{
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 975px;
+    height: 65px;
+    color: rgb(101, 94, 94);
+}
+
+/* .Contact{
+    max-width: 1280px;
+    margin: 0 auto;
+} */
+
+.Form{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    /* margin-top: 40px; */
+    align-items: end;
+}
+
+.primary-btn{
+    padding: 18px 10px;
+    background-color: black;
+    color: white;
+    min-width: 220px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.top-btns{
+    display: flex;
+    gap: 32px;
+}
+
+.outline-btn{
+    background-color: white;
+    color: rgb(34, 34, 34);
+    padding: 18px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    border-radius: 5px;
+    height: 44px;
+    min-width: 220px;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.contact-Form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-Form form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-elements{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+
+.form-elements input{
+    height: 40px;
+    padding: 0 8px;
+}
+
+.form-elements label{
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    padding: 0 8px;
+    background-color: white;
+}
+
+/* .form-elements textarea{
+    border: 1px solid black;
+    width: 100%;
+    height: 125px;
+} */
+
+.submit-btn{
+    display: flex;
+    justify-content: end;
+}
+
+.contact-Image img{
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: -5px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 72px);
+    justify-content: end;
 }
